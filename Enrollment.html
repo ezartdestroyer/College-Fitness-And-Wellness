@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrollment Form</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff; /* White background */
+            color: #333;
+        }
+
+        header {
+            background-color: #FFE5B4; /* Light orange background */
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px; /* Increased spacing between header and content */
+            color: #FF6347; /* Highlight color */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #FF6347; /* Highlight color */
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #FF6347; /* Button color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FF4500; /* Button hover color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enrollment Form</h1>
+    </header>
+    <main>
+        <form>
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="input-group">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="" selected disabled>Select Course</option>
+                    <option value="fitness">Fitness Tips</option>
+                    <option value="recipes">Healthy Recipes</option>
+                    <option value="routines">Workout Routines</option>
+                    <option value="mental-health">Mental Health</option>
+                </select>
+            </div>
+            <button type="submit">Enroll Now</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 College Fitness & Wellness</p>
+    </footer>
+</body>
+</html>
